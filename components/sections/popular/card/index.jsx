@@ -3,6 +3,7 @@ import Image from "next/image"
 import { abbreviateNumber } from "../../../../utils/textUtils"
 import CardTitle from "./cardTitle"
 import PopularState from "./popularState"
+import Rating from "./rating"
 
 const PopularCard = ({ title, image, hot, cold, soldAmount, rating }) => {
     return (
@@ -20,6 +21,9 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating }) => {
                 borderRadius={'12px'}
             >
                 <Box>
+                    <Box position={'absolute'} zIndex={1} ml={'10px'} mt={'7px'}> 
+                        <Rating rating={rating} />
+                    </Box>
                     <Image src={image} width={'307px'} height={'226px'} />
                 </Box>
                 <Flex mt={'19px'} mx={'11px'} justifyContent={"space-between"}>
