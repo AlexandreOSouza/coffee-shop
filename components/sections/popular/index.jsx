@@ -31,16 +31,28 @@ const POPULAR_OP = [
 
 const PopularSection = () => {
     return (
-        <Flex mx={'86px'} flexDirection={'column'} mt={'-311px'}>
-            <Box ml={'37px'}>
-                <TitleText>
-                    Popular Now
-                </TitleText>
-            </Box>
-            <Flex>
-                {POPULAR_OP.map((item, index) => 
-                    <PopularCard key={index} {...item} />
-                )}
+        <Flex justifyContent={'center'}>
+            <Flex 
+                mx={'86px'} 
+                flexDirection={'column'} 
+                mt={'-311px'} 
+                pb={'80px'}
+                px={'60px'}
+                backgroundImage={'/static/images/landing/popular/rectangle.png'}
+                backgroundRepeat={'no-repeat'}
+                backgroundPosition={'bottom'}
+                backgroundSize={'100% 70%'}
+            >
+                <Box ml={'37px'}>
+                    <TitleText>
+                        Popular Now
+                    </TitleText>
+                </Box>
+                <Flex columnGap={'38px'} justifyContent={'center'}>
+                    {POPULAR_OP.map((item, index) => 
+                        <PopularCard key={index} {...item} />
+                    )}
+                </Flex>
             </Flex>
         </Flex>
     )

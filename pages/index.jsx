@@ -11,7 +11,7 @@ export default function Home() {
         <title>Cafe Street</title>
       </Head>
       <Flex width={'100%'} height={'100vh'} justifyContent={'center'} alignItems={'flex-start'}>
-        <Flex maxW={'1900px'} width={'100%'} flexDirection={'column'}>
+        <Flex maxW={'1900px'} width={'100%'} flexDirection={'column'} pb={'100px'}>
           <HeroSection />
           <PopularSection />
         </Flex>
