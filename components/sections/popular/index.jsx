@@ -48,7 +48,7 @@ const PopularSection = () => {
                         Popular Now
                     </TitleText>
                 </Box>
-                <Flex columnGap={'38px'} justifyContent={'center'}>
+                <Flex columnGap={'38px'} justifyContent={'center'} mt={'32px'}>
                     {POPULAR_OP.map((item, index) => 
                         <PopularCard key={index} {...item} />
                     )}
