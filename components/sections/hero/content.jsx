@@ -24,9 +24,20 @@ const ContentHero = () => {
                         Boost your productivity and build your mood with a glass of coffee in the morning 
                     </SubtileText>
                 </Box>
-                <Box>
+                <Flex mt={'45px'} alignItems={'center'} >
                     <OrderButton />
-                </Box>
+                    <a href="#">
+                        <Text
+                            fontSize={'12px'}
+                            lineHeight={'18px'}
+                            color={'primary'}
+                            fontWeight={'700'}
+                            ml={'50px'}
+                        >
+                            More menu
+                        </Text>
+                    </a>
+                </Flex>
             </Flex>
             <Box>
                 <Image src={'/static/images/landing/img-hero.svg'} width={'526px'} height={'426px'} />
