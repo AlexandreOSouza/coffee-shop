@@ -9,6 +9,7 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating }) => {
         <Flex 
             background={'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%)'}
             padding={'6px'}
+            borderRadius={'12px'}
         >
             <Flex
                 flexDirection={'column'}
@@ -16,6 +17,7 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating }) => {
                 pt={'24px'}
                 px={'18px'}
                 pb={'19px'}
+                borderRadius={'12px'}
             >
                 <Box>
                     <Image src={image} width={'307px'} height={'226px'} />
