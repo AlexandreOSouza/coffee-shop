@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react"
 import Nav from "../../nav"
+import ContentHero from "./content"
 
 const HeroSection = () => {
     return (
@@ -9,12 +10,14 @@ const HeroSection = () => {
             pt={'30px'} 
             height={'1004px'} 
             alignItems={'flex-start'}
-            backgroundImage={'./static/images/landing/bg-image.png'}
+            flexDirection={'column'}
+            backgroundImage={'./static/images/landing/bg-image.svg'}
             backgroundSize={'cover'}
             backgroundPosition={'center'}
             backgroundRepeat={'no-repeat'}
         >
             <Nav />
+            <ContentHero />
         </Flex>
     )
 }
