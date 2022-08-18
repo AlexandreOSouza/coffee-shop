@@ -5,6 +5,7 @@ const theme = extendTheme({
         primary: '#FF902A',
         secondary: '#2F2105',
         light: '#F9D9AA',
+        subtitle: '#7E7D7A'
     }
 })
 
