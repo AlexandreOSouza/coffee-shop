@@ -39,7 +39,7 @@ const ContentHero = () => {
                     </a>
                 </Flex>
             </Flex>
-            <Box>
+            <Box display={{base: 'none', md: 'block'}}>
                 <Image src={'/static/images/landing/img-hero.svg'} width={'526px'} height={'426px'} />
             </Box>
             

@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
         <Flex 
             width={'100%'} 
-            px={'132px'} 
+            px={{base: '50px', md: '132px'}} 
             pt={'30px'} 
             height={{base: '2200px', md: '1004px'}} 
             alignItems={'flex-start'}
