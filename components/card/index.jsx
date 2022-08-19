@@ -37,7 +37,7 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating, desc }) => {
                             </CardTitle>
                             <Flex mt={'12px'} columnGap={'24px'}>
                                 {desc ? (
-                                    <Box maxW={'160px'}>
+                                    <Box maxW={'160px'} display={{base: 'none', md: 'block'}}>
                                         <CardDesc>
                                             {desc}
                                         </CardDesc>

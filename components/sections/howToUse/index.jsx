@@ -25,14 +25,15 @@ const HowToUseSection = () => {
         <Flex justifyContent={'center'} alignItems={'center'}>
             <Flex
                 mt={'120px'}
-                px={'135px'}
+                px={{base: '60px', md: '135px'}}
                 flexDirection={'column'}
                 width={'100%'}
+                alignItems={{base: 'center', md: ''}}
             >
                 <TitleText>
                     How to use delivery service
                 </TitleText>
-                <Flex columnGap={'30px'} mt={'40px'}>
+                <Flex columnGap={{base: '0', md: '30px'}} mt={'40px'} flexDir={{base: 'column', md: 'row'}}>
                     {SERVICES.map((service, index) => <HowSteps key={index} {...service} />)}
                 </Flex>
             </Flex>
