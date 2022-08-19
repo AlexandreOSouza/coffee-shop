@@ -33,22 +33,23 @@ const PopularSection = () => {
     return (
         <Flex justifyContent={'center'}>
             <Flex 
-                mx={'86px'} 
+                mx={{base: '', md: '86px'}} 
                 flexDirection={'column'} 
-                mt={'-311px'} 
+                mt={{base: '-1400px', md: '311px'}} 
                 pb={'80px'}
                 px={'60px'}
-                backgroundImage={'/static/images/landing/popular/rectangle.png'}
+                backgroundImage={{base: '', md: '/static/images/landing/popular/rectangle.png'}}
                 backgroundRepeat={'no-repeat'}
                 backgroundPosition={'bottom'}
                 backgroundSize={'100% 70%'}
+                alignItems={{base: 'center', md: ''}}
             >
-                <Box ml={'37px'}>
+                <Box ml={{base: '', md: '37px'}}>
                     <TitleText>
                         Popular Now
                     </TitleText>
                 </Box>
-                <Flex columnGap={'38px'} justifyContent={'center'} mt={'32px'}>
+                <Flex columnGap={'38px'} rowGap={'30px'} justifyContent={'center'} mt={'32px'} flexDir={{base: 'column', md: 'row'}}>
                     {POPULAR_OP.map((item, index) => 
                         <PopularCard key={index} {...item} />
                     )}

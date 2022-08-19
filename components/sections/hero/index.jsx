@@ -8,7 +8,7 @@ const HeroSection = () => {
             width={'100%'} 
             px={'132px'} 
             pt={'30px'} 
-            height={'1004px'} 
+            height={{base: '2200px', md: '1004px'}} 
             alignItems={'flex-start'}
             flexDirection={'column'}
             backgroundImage={'./static/images/landing/bg-image.svg'}
