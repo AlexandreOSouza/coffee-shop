@@ -4,7 +4,7 @@ import TitleText from "../../texts/title"
 
 const NewsletterSection = () => {
     return (
-        <Flex width={'100%'} justifyContent={'center'} marginTop={'120px'}>
+        <Flex width={'100%'} justifyContent={'center'} marginTop={{base: '', md: '120px'}}>
             <Flex 
                 borderRadius={{base: 0, md: '24px'}}
                 backgroundImage={'/static/images/newsletter/bg.png'} 

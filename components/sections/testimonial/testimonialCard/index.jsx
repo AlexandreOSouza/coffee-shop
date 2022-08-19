@@ -5,7 +5,7 @@ import DescText from "../../../texts/description"
 
 const TestimonialCard = ({ image, title, desc }) => {
     return (
-        <Flex width={'257px'} height={'280px'}>
+        <Flex width={{base: '200px', md: '257px'}} height={'280px'}>
             <Flex 
                 border={'6px solid rgba(255, 211, 145, 1)'}
                 backgroundColor={'#FFCB7C'}  
@@ -24,7 +24,7 @@ const TestimonialCard = ({ image, title, desc }) => {
             >
                 <Text 
                     fontWeight={500}
-                    fontSize={'18px'}
+                    fontSize={{base: '16px', md: '18px'}}
                     lineHeight={'27px'}
                     color={'secondary'}
                 >
