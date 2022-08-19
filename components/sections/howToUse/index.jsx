@@ -27,6 +27,7 @@ const HowToUseSection = () => {
                 mt={'120px'}
                 px={'135px'}
                 flexDirection={'column'}
+                width={'100%'}
             >
                 <TitleText>
                     How to use delivery service
