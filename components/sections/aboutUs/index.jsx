@@ -24,6 +24,7 @@ const AboutUsSection = () => {
                 background={'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%)'}
                 padding={'6px'}
                 borderRadius={'12px'}
+                display={{base: 'none', md: 'flex'}}
             >
                 <Image src={'/static/images/aboutUs/coffee.png'} width={'359px'} height={'497px'} />
             </Flex>
@@ -31,21 +32,22 @@ const AboutUsSection = () => {
                 flexDirection={'column'}
                 mb={'20px'}
                 mt={'84px'}
+                alignItems={{base: 'center', md: ''}}
             >
                 <TitleText>
                     About Us
                 </TitleText>
                 <Box maxW={'348px'} mt={'24px'}>
-                    <DescText>
+                    <DescText textAlign={{base: 'center', md: ''}}>
                         We provide quality coffee, and ready to deliver.
                     </DescText>
                 </Box>
-                <Box maxW={'478px'} mt={'24px'}>
-                    <SubtileText>
-                    We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.
+                <Flex maxW={'478px'} mt={'24px'} flexDir={'column'} alignItems={{base: 'center', md: ''}}>
+                    <SubtileText textAlign={{base: 'center', md: ''}}>
+                        We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.
                     </SubtileText>
                     <GetCoffeeButton mt={'32px'}/>
-                </Box>
+                </Flex>
             </Flex>
         </Flex>
     )
