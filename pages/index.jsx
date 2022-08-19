@@ -5,6 +5,7 @@ import AboutUsSection from '../components/sections/aboutUs'
 import HeroSection from '../components/sections/hero'
 import HowToUseSection from '../components/sections/howToUse'
 import PopularSection from '../components/sections/popular'
+import TestimonialSection from '../components/sections/testimonial'
 import SpecialMenuSection from '../components/sections/specialMenu'
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
           <HowToUseSection />
           <AboutUsSection />
           <SpecialMenuSection />
+          <TestimonialSection />
         </Flex>
       </Flex>
     </>
