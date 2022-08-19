@@ -1,16 +1,18 @@
 import { Box, Flex } from "@chakra-ui/react"
 import Image from "next/image"
-import { abbreviateNumber } from "../../../../utils/textUtils"
+import { abbreviateNumber } from "../../utils/textUtils"
+import CardDesc from "./cardDescription"
 import CardTitle from "./cardTitle"
 import PopularState from "./popularState"
 import Rating from "./rating"
 
-const PopularCard = ({ title, image, hot, cold, soldAmount, rating }) => {
+const PopularCard = ({ title, image, hot, cold, soldAmount, rating, desc }) => {
     return (
         <Flex 
             background={'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%)'}
             padding={'6px'}
             borderRadius={'12px'}
+            backdropFilter={'blur(4px)'}
         >
             <Flex
                 flexDirection={'column'}
@@ -33,12 +35,22 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating }) => {
                                 {title}
                             </CardTitle>
                             <Flex mt={'12px'} columnGap={'24px'}>
-                                <PopularState active={hot}>
-                                    Hot
-                                </PopularState>
-                                <PopularState active={cold}>
-                                    Cold
-                                </PopularState>
+                                {desc ? (
+                                    <Box maxW={'160px'}>
+                                        <CardDesc>
+                                            {desc}
+                                        </CardDesc>
+                                    </Box>
+                                ) : (
+                                    <>
+                                        <PopularState active={hot}>
+                                            Hot
+                                        </PopularState><PopularState active={cold}>
+                                            Cold
+                                        </PopularState>
+                                    </>
+                                )}
+                                
                             </Flex>
                         </Flex>
                     </Flex>

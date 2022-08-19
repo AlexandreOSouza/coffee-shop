@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react"
 import TitleText from "../../texts/title"
-import PopularCard from "./card"
+import PopularCard from "../../card"
 
 const POPULAR_OP = [
     {
