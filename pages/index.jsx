@@ -7,6 +7,7 @@ import HowToUseSection from '../components/sections/howToUse'
 import PopularSection from '../components/sections/popular'
 import TestimonialSection from '../components/sections/testimonial'
 import SpecialMenuSection from '../components/sections/specialMenu'
+import NewsletterSection from '../components/sections/newsletter'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <AboutUsSection />
           <SpecialMenuSection />
           <TestimonialSection />
+          <NewsletterSection />
         </Flex>
       </Flex>
     </>
