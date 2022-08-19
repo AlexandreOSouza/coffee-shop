@@ -5,6 +5,7 @@ import AboutUsSection from '../components/sections/aboutUs'
 import HeroSection from '../components/sections/hero'
 import HowToUseSection from '../components/sections/howToUse'
 import PopularSection from '../components/sections/popular'
+import SpecialMenuSection from '../components/sections/specialMenu'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           <PopularSection />
           <HowToUseSection />
           <AboutUsSection />
+          <SpecialMenuSection />
         </Flex>
       </Flex>
     </>
