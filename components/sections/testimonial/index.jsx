@@ -33,7 +33,7 @@ const TestimonialSection = () => {
             justifyContent={'center'}
             alignItems={'flex-end'}
             columnGap={'170px'}
-            mt={'150px'}
+            mt={{base: '80px', md: '150px'}}
             py={{base: '20px', md: ''}}
         >
             <Flex 
