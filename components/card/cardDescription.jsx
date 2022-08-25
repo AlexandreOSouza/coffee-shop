@@ -3,7 +3,7 @@ import { Text } from "@chakra-ui/react"
 const CardDesc = ({ children }) => {
     return (
         <Text 
-            fontSize={'14px'} 
+            fontSize={{base: '12px', md: '14px'}} 
             fontWeight={'600'} 
             lineHeight={'21px'}
             color={'subtitle'}

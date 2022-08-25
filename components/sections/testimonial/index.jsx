@@ -25,35 +25,37 @@ const TestimonialSection = () => {
     return (
         <Flex
             backgroundImage={'/static/images/landing/sayAbout/bg.png'}
-            backgroundRepeat={'no-repeat'}
+            backgroundRepeat={{base: 'repeat', md: 'no-repeat'}}
             backgroundPosition={'left'}
-            backgroundSize={'60% 100%'}
+            backgroundSize={{base: '', md: '60% 100%'}}
             width={'100%'}
-            height={'484px'}
+            height={{base: '100%', md: '484px'}}
             justifyContent={'center'}
             alignItems={'flex-end'}
             columnGap={'170px'}
-            mt={'150px'}
+            mt={{base: '80px', md: '150px'}}
+            py={{base: '20px', md: ''}}
         >
             <Flex 
-                justifyContent={"space-between"} 
+                justifyContent={{ base: 'center', md: "space-between"}} 
                 alignItems={'center'} 
                 width={'100%'} 
                 height={'100%'}
-                pl={'129px'}
-                pr={'50px'}
+                pl={{base: '0', md: '129px'}}
+                pr={{base: '0', md: '50px'}}
+                flexDirection={{base: 'column', md: 'row'}}
             > 
-                <Flex flexDirection={'column'}>
+                <Flex flexDirection={'column'} alignItems={{base: 'center', md: ''}}>
                     <TitleText>
                         What they say about us
                     </TitleText>
                     <Box maxWidth={'352px'} mt={'16px'}>
-                        <SubtileText>
-                        We always provide the best service and always maintain the quality of coffee
+                        <SubtileText textAlign={{base: 'center', md: ''}}>
+                            We always provide the best service and always maintain the quality of coffee
                         </SubtileText>
                     </Box>
                 </Flex>
-                <Flex columnGap={'40px'}>
+                <Flex columnGap={{base: 0, md: '40px'}} rowGap={{base: '40px', md: ''}} flexDir={{ base: 'column', md: 'row'}} mt={{base: '50px', md: ''}}>
                     {TESTIMONIALS.map((testimonials, index) => {
                         return (
                             <TestimonialCard key={index} {...testimonials} />

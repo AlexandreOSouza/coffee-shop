@@ -11,7 +11,7 @@ const NewsletterInput = () => {
                     borderRadius={'42px'}
                     background={'white'}
                     height={'54px'}
-                    width={'486px'}
+                    width={{base: '300px', md: '486px'}}
                 />
                 <InputRightElement width={'138px'} height={'100%'} pr={'5px'}>
                     <Button

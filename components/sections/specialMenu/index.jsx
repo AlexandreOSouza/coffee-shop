@@ -49,16 +49,17 @@ const SPECIAL = [
 
 const SpecialMenuSection = () => {
     return (
-        <Flex justifyContent={'center'} alignItems={'center'}>
+        <Flex justifyContent={'center'} alignItems={'center'} id={'products'}>
             <Flex
-                mt={'120px'}
+                mt={{base: '80px', md: '120px'}}
                 px={'135px'}
                 flexDirection={'column'}
+                alignItems={{base: 'center', md: ''}}
             >
                 <TitleText>
                     Special menu for you
                 </TitleText>
-                <Grid templateColumns={'repeat(3, 1fr)'} columnGap={'40px'} rowGap={'40px'} mt={'40px'}>
+                <Grid templateColumns={{base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)'}} columnGap={{base: '20px', md: '40px'}} rowGap={{base: '20px', md: '40px'}} mt={'40px'}>
                     {SPECIAL.map((item, index) => {
                         return (
                             <GridItem key={index}>

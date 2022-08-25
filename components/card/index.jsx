@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react"
+import { Box, Flex, useMediaQuery } from "@chakra-ui/react"
 import Image from "next/image"
 import { abbreviateNumber } from "../../utils/textUtils"
 import CardDesc from "./cardDescription"
@@ -7,6 +7,7 @@ import PopularState from "./popularState"
 import Rating from "./rating"
 
 const PopularCard = ({ title, image, hot, cold, soldAmount, rating, desc }) => {
+    const [isMobileDevice] = useMediaQuery('md')
     return (
         <Flex 
             background={'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%)'}
@@ -28,7 +29,7 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating, desc }) => {
                     </Box>
                     <Image src={image} width={'307px'} height={'226px'} />
                 </Box>
-                <Flex mt={'19px'} mx={'11px'} justifyContent={"space-between"}>
+                <Flex mt={'19px'} mx={'11px'} justifyContent={"space-between"} flexDir={{base: 'column', md: 'row'}}>
                     <Flex justifyContent={"space-between"}>
                         <Flex flexDirection={'column'}>
                            <CardTitle>
@@ -36,7 +37,7 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating, desc }) => {
                             </CardTitle>
                             <Flex mt={'12px'} columnGap={'24px'}>
                                 {desc ? (
-                                    <Box maxW={'160px'}>
+                                    <Box maxW={'160px'} display={{base: 'none', md: 'block'}}>
                                         <CardDesc>
                                             {desc}
                                         </CardDesc>
@@ -54,7 +55,7 @@ const PopularCard = ({ title, image, hot, cold, soldAmount, rating, desc }) => {
                             </Flex>
                         </Flex>
                     </Flex>
-                    <Flex flexDirection={'column'} rowGap={'6px'}>
+                    <Flex flexDirection={{base: 'row', md: 'column'}} rowGap={'6px'} columnGap={{base: '30px', md: ''}}>
                         <CardTitle>
                             {abbreviateNumber(soldAmount)}
                         </CardTitle>

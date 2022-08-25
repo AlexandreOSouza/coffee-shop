@@ -12,11 +12,11 @@ import NewsletterSection from '../components/sections/newsletter'
 export default function Home() {
   return (
     <>
+      <Flex width={'100%'} height={'100%'} justifyContent={'center'} alignItems={'flex-start'}>
       <Head>
         <title>Cafe Street</title>
       </Head>
-      <Flex width={'100%'} height={'100vh'} justifyContent={'center'} alignItems={'flex-start'}>
-        <Flex maxW={'1900px'} width={'100%'} flexDirection={'column'} pb={'100px'}>
+        <Flex maxW={'1900px'} width={'100%'} flexDirection={'column'} pb={{base: 0, md: '100px'}}>
           <HeroSection />
           <PopularSection />
           <HowToUseSection />
