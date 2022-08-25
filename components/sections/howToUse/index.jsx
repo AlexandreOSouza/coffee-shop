@@ -22,7 +22,7 @@ const SERVICES = [
 
 const HowToUseSection = () => {
     return (
-        <Flex justifyContent={'center'} alignItems={'center'}>
+        <Flex justifyContent={'center'} alignItems={'center'} id={'delivery'}>
             <Flex
                 mt={'120px'}
                 px={{base: '60px', md: '135px'}}

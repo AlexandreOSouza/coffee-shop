@@ -49,7 +49,7 @@ const SPECIAL = [
 
 const SpecialMenuSection = () => {
     return (
-        <Flex justifyContent={'center'} alignItems={'center'}>
+        <Flex justifyContent={'center'} alignItems={'center'} id={'products'}>
             <Flex
                 mt={{base: '80px', md: '120px'}}
                 px={'135px'}

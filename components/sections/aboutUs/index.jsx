@@ -19,6 +19,7 @@ const AboutUsSection = () => {
             pb={'62px'}
             columnGap={'170px'}
             mt={{base: '0px', md: '150px'}}
+            id={'about'}
         >
             <Flex
                 background={'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%)'}
