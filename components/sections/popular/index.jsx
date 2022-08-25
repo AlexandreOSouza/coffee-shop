@@ -35,7 +35,7 @@ const PopularSection = () => {
             <Flex 
                 mx={{base: '', md: '86px'}} 
                 flexDirection={'column'} 
-                mt={{base: '-1400px', md: '311px'}} 
+                mt={{base: '-1400px', md: '-311px'}} 
                 pb={'80px'}
                 px={'60px'}
                 backgroundImage={{base: '', md: '/static/images/landing/popular/rectangle.png'}}
